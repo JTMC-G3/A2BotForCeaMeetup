@@ -43,7 +43,7 @@ async def on_message(message):
 
             embed.set_author(name=message.author.name,
                             icon_url=message.author.avatar.url)
-            await message.channel.send(content=f"ping: <@&ROLEID>", embed=embed)
+            await message.channel.send(content=f"<@&1470549172552994887>", embed=embed)
             
             
 
