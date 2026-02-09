@@ -1,6 +1,7 @@
 # A2BotForCeaMeetup
 A remake of the A2 Bot for the CEA Meetup
 
+ts a test branch so i can test howmanyspace on a seperate server before i push that shi
 
 # Features:
 1. howmanyspace/hotmanspacemike
