@@ -78,6 +78,7 @@ def getdeploymentinfo(deployment_name):
                     'station_name': station.get('station_name'),
                     'deployment_id': deployment.get('deployment_id'),
                     'player_count': deployment.get('player_count'),
+                    'deployment_cl': deployment.get('deployment_cl'),
                     'region': deployment.get('region'),
                     'online': deployment.get('online'),
                 }
