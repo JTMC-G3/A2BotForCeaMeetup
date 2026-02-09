@@ -30,7 +30,7 @@ async def on_message(message):
             response = message.content[8:]  # Get the text after '?naping '
             embed = discord.Embed(title="NA PING",
                       description=f"{response}",
-                      colour=0x00b0f4)
+                      colour=discord.Colour.random())
 
             embed.set_author(name=message.author.name,
                             icon_url=message.author.avatar.url)
