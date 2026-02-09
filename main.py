@@ -7,6 +7,7 @@ import discord
 import requests # for howmanyspace
 from dotenv import load_dotenv 
 import os 
+import getfleetsyay
 load_dotenv()
 
 intents = discord.Intents.all()
@@ -21,11 +22,15 @@ async def on_ready():
 async def on_message(message):
     if message.author == bot.user:
         return
-
+        
     if message.content == "howmanyspace" or message.content == "hotmanspacemike":
-        await message.channel.send('ts not implemented yet. ill make a test later')
+        getfleetsyay.getfleetsyay()
+        playercount = getfleetsyay.getdeploymentinfo("EA Calibration_22")
+        finalplayercount = playercount['player_count']
+        finalcl = playercount['deployment_cl']
+        await message.channel.send(f'```\n+----------------+-------+----+\n| EA Calibration 22 | {finalcl} | {finalplayercount} |\n+----------------+-------+----+```')
     
-    if message.channel.id == 11: #still needa find
+    if message.channel.id == 1470544517248585788: #still needa find
         await message.delete() # to prevent spam and keep the channel bot only
         if message.content.startswith('?naping '): #startswith so we can see whats after it
             response = message.content[8:]  # Get the text after '?naping '
