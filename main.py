@@ -1,4 +1,5 @@
 # This example requires the 'message_content' intent.
+# base bot model from the discord.py quickstart (actually logging in), the rest by me (the dotenv loading, the commands, etc)
 
 from IPython import embed
 import discord
@@ -22,7 +23,7 @@ async def on_message(message):
         return
 
     if message.content == "howmanyspace" or message.content == "hotmanspacemike":
-        await message.channel.send('ts not implemented yet.')
+        await message.channel.send('ts not implemented yet. ill make a test later')
     
     if message.channel.id == 11: #still needa find
         await message.delete() # to prevent spam and keep the channel bot only
