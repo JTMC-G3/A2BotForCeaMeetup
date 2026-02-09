@@ -22,6 +22,9 @@ async def on_ready():
 async def on_message(message):
     if message.author == bot.user:
         return
+
+    if message.author.id == 1173257623055913072: # blob cat laugh hahah
+        await message.add_reaction("😹")
         
     if message.content == "howmanyspace" or message.content == "hotmanspacemike":
         getfleetsyay.getfleetsyay()
