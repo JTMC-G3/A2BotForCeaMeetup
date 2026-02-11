@@ -1,3 +1,5 @@
+#ughguhguhguhg im too fucking lazzzzyyyy and im grounded so im not thinking straight so fuck it, thanks claude!!!!
+
 import api_client
 import os
 import dotenv
