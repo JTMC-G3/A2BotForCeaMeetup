@@ -26,7 +26,7 @@ async def on_message(message):
     if message.author.id == 1173257623055913072: # blob cat laugh hahah
         await message.add_reaction("😹")
         
-    if message.content == "howmanyspace" or message.content == "hotmanspacemike":
+    if message.content == "howmanyspace" or message.content == "hotmanspacemike" or message.content.startswith("howmany"):
         getfleetsyay.getfleetsyay()
         deploymentname = "4823_Ulysses_Aurora"
         playercount = getfleetsyay.getdeploymentinfo(deploymentname)
