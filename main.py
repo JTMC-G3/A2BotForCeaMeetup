@@ -28,10 +28,11 @@ async def on_message(message):
         
     if message.content == "howmanyspace" or message.content == "hotmanspacemike":
         getfleetsyay.getfleetsyay()
-        playercount = getfleetsyay.getdeploymentinfo("EA Calibration_22")
+        deploymentname = "4823_Ulysses_Aurora"
+        playercount = getfleetsyay.getdeploymentinfo(deploymentname)
         finalplayercount = playercount['player_count']
         finalcl = playercount['deployment_cl']
-        await message.channel.send(f'```\n+----------------+-------+----+\n| EA Calibration 22 | {finalcl} | {finalplayercount} |\n+----------------+-------+----+```')
+        await message.channel.send(f'```\n+----------------+-------+----+\n| {deploymentname} | {finalcl} | {finalplayercount} |\n+----------------+-------+----+```')
     
     if message.channel.id == 1470544517248585788: #still needa find
         await message.delete() # to prevent spam and keep the channel bot only
